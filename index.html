@@ -19,12 +19,13 @@
   </head>
   <body>
     <!--======== Header =========-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
           <a href="./index.html" class="link logo"
             >Web<span class="logo-text">Studio</span></a
           >
+
           <ul class="menu list">
             <li class="menu-item">
               <a class="link menu-link active" href="./index.html">Studio</a>
@@ -51,8 +52,17 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- =========Hero ========= -->
@@ -66,7 +76,7 @@
       </section> -->
       <!-- Hidden h2  -->
       <!-- ========= Advantages Section =========-->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container">
           <h2 class="title visually-hidden">Our Advantages</h2>
           <ul class="list advantages-list">
@@ -124,7 +134,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ========= What are we doing =========-->
       <section class="services section">
         <div class="container">
@@ -326,7 +336,7 @@
         </div>
       </section> -->
       <!-- Customers -->
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="title customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -368,10 +378,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- ========= Footer ========= -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-wrapper">
         <div class="footer-desc">
           <a class="link footer-logo" href="./index.html"
@@ -410,9 +420,9 @@
               ></a>
             </li>
           </ul>
-        </div> -->
-    <!-- Footer Form -->
-    <!-- <div class="footer-subscribe-form-wrapper">
+        </div>
+        <!-- Footer Form -->
+        <div class="footer-subscribe-form-wrapper">
           <p class="footer-subscribe-text">Subscribe</p>
           <form name="footer-form" class="footer-subscribe-form">
             <label class="footer-subscribe-field"
@@ -433,7 +443,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -513,6 +523,68 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu mobile-menu-close-btn">
+        <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="" class="link">Studio</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li>
+          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <!-- Same icons' classes with footer-->
+      <ul class="mobile-social-list list">
+        <li class="footer-list-item">
+          <a class="footer-list-link" href=""
+            ><svg class="footer-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link" href=""
+            ><svg class="footer-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link" href=""
+            ><svg class="footer-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link" href="">
+            <svg class="footer-list-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile menu scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!--  Modal window script -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
