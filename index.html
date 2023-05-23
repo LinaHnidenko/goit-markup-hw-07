@@ -66,17 +66,17 @@
 
     <main>
       <!-- =========Hero ========= -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="modal-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Hidden h2  -->
       <!-- ========= Advantages Section =========-->
-      <!-- <section class="advantages section">
+      <section class="advantages section">
         <div class="container">
           <h2 class="title visually-hidden">Our Advantages</h2>
           <ul class="list advantages-list">
@@ -134,7 +134,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ========= What are we doing =========-->
       <section class="services section">
         <div class="container">
@@ -143,7 +143,11 @@
             <li class="services-list-item">
               <img
                 class="services-imgs"
-                src="./images/features/img-1.jpg"
+                srcset="
+                  ./images/features/img_1@1x.jpg 1x,
+                  ./images/features/img_1@2x.jpg 2x
+                "
+                src="./images/features/img_1@1x.jpg"
                 alt="Monitor"
                 width="360"
               />
@@ -151,7 +155,11 @@
             <li class="services-list-item">
               <img
                 class="services-imgs"
-                src="./images/features/img-2.jpg"
+                srcset="
+                  ./images/features/img_2@1x.jpg 1x,
+                  ./images/features/img_2@2x.jpg 2x
+                "
+                src="./images/features/img_2@1x.jp"
                 alt="Screens of Phone"
                 width="360"
               />
@@ -159,7 +167,11 @@
             <li class="services-list-item">
               <img
                 class="services-imgs"
-                src="./images/features/img-3.jpg"
+                srcset="
+                  ./images/features/img_3@1x.jpg 1x,
+                  ./images/features/img_3@2x.jpg 2x
+                "
+                src="./images/features/img_3@1x.jpg"
                 alt="Phone and laptop"
                 width="360"
               />
@@ -168,16 +180,21 @@
         </div>
       </section>
       <!-- ========= Our Team =========-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="list team-list">
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/our-team/img1.jpg"
+                srcset="
+                  ./images/our-team/employee_1@1x.jpg 1x,
+                  ./images/our-team/employee_1@2x.jpg 2x
+                "
+                src="./images/our-team/employee_1@1x.jpg"
                 alt="Employee"
                 width="264"
+                loading="lazy"
               />
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Mark Guerrero</h3>
@@ -215,9 +232,14 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/our-team/img2.jpg"
+                srcset="
+                  ./images/our-team/employee_2@1x.jpg 1x,
+                  ./images/our-team/employee_2@2x.jpg 2x
+                "
+                src="./images/our-team/employee_2@1x.jpg"
                 alt="Employee"
                 width="264"
+                loading="lazy"
               />
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Tom Ford</h3>
@@ -255,9 +277,14 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/our-team/img3.jpg"
+                srcset="
+                  ./images/our-team/employee_3@1x.jpg 1x,
+                  ./images/our-team/employee_3@2x.jpg 2x
+                "
+                src="./images/our-team/employee_3@1x.jpg"
                 alt="Employee"
                 width="264"
+                loading="lazy"
               />
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Camila Garcia</h3>
@@ -295,9 +322,14 @@
             <li class="team-list-item">
               <img
                 class="team-img"
-                src="./images/our-team/img4.jpg"
+                srcset="
+                  ./images/our-team/employee_4@1x.jpg 1x,
+                  ./images/our-team/employee_4@2x.jpg 2x
+                "
+                src="./images/our-team/employee_4@1x.jpg"
                 alt="Employee"
                 width="264"
+                loading="lazy"
               />
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Daniel Wilson</h3>
@@ -334,7 +366,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Customers -->
       <section class="customers section">
         <div class="container">
@@ -533,17 +565,19 @@
       </button>
 
       <ul class="mobile-menu list">
-        <li><a href="" class="link">Studio</a></li>
+        <li><a href="" class="link mobile-menu-first-link">Studio</a></li>
         <li><a href="" class="link">Portfolio</a></li>
         <li><a href="" class="link">Contacts</a></li>
       </ul>
 
       <ul class="mobile-contacts list">
         <li>
-          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          <a href="tel:110001111111" class="mobile-contacts-tel link"
+            >+11 (000) 111-11-11</a
+          >
         </li>
         <li>
-          <a href="mailto:info@devstudio.com" class="link"
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-mail link"
             >info@devstudio.com</a
           >
         </li>
